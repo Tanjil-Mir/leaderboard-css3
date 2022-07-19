@@ -147,25 +147,32 @@ hr {
         width: 100%;
     }
 
-    .players, .blogs, .courses {
+    .players,
+    .blogs,
+    .courses {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .player, .blog {
+    .player,
+    .blog {
         flex-direction: column;
     }
 }
+
 /* table devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .players, .courses{
-        grid-template-columns: repeat(2, 1fr);  
 
-      }
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);  
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
 
-      }
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
